@@ -11,7 +11,7 @@ author 'Michal Špaček <skim@cpan.org>';
 license 'bsd';
 name 'Unicode-Block';
 readme_from 'Block.pm';
-requires 'Class::Utils' => 0.02;
+requires 'Class::Utils' => 0.06;
 requires 'Error::Pure' => 0.13;
 requires 'Text::CharWidth' => 0;
 requires 'Unicode::Char' => 0;
@@ -28,7 +28,7 @@ test_requires 'Test::NoWarnings' => 0;
 test_requires 'Test::Pod' => 0;
 test_requires 'Test::Pod::Coverage' => 0;
 tests_recursive;
-version '0.01';
+version '0.02';
 
 # Run.
 WriteAll();
