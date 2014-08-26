@@ -15,7 +15,7 @@ use Unicode::Char;
 Readonly::Scalar our $SPACE => q{ };
 
 # Version.
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 # Constructor.
 sub new {
@@ -64,7 +64,7 @@ sub char {
 	# Get char.
 	my $char = $self->{'u'}->u($self->{'hex'});
 
-	# Non-Spacing Mark.
+	# 'Non-Spacing Mark' and 'Enclosing Mark'.
 	if ($char =~ m/\p{Mn}/ms || $char =~ m/\p{Me}/ms) {
 		$char = $SPACE.$char;
 
@@ -262,6 +262,6 @@ BSD license.
 
 =head1 VERSION
 
-0.02
+0.03
 
 =cut

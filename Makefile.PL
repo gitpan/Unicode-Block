@@ -15,6 +15,7 @@ requires 'Class::Utils' => 0.06;
 requires 'Error::Pure' => 0.13;
 requires 'Text::CharWidth' => 0;
 requires 'Unicode::Char' => 0;
+requires 'perl' => '5.6.2';
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=Unicode-Block';
 resources 'homepage' => 'https://github.com/tupinek/Unicode-Block';
@@ -28,7 +29,7 @@ test_requires 'Test::NoWarnings' => 0;
 test_requires 'Test::Pod' => 0;
 test_requires 'Test::Pod::Coverage' => 0;
 tests_recursive;
-version '0.02';
+version '0.03';
 
 # Run.
 WriteAll();
